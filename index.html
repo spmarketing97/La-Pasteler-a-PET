@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Pastelería PET | Snacks Saludables para tu Mascota</title>
+    <meta name="description" content="Descubre cómo preparar snacks y pasteles saludables para perros y gatos usando ingredientes naturales.">
+    
+    <!-- Favicon (Inline SVG) -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🐾</text></svg>">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Schema Markup -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Course",
+      "name": "La Pastelería PET",
+      "description": "Programa para aprender a preparar snacks y pasteles saludables para perros y gatos usando ingredientes naturales.",
+      "provider": {
+        "@type": "Organization",
+        "name": "La Pastelería PET"
+      }
+    }
+    </script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container d-flex justify-between align-center">
+            <div class="logo">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none">
+                    <path d="M12 21.5c-4 0-7-2-7-5.5s3.5-6.5 7-6.5 7 3 7 6.5-3 5.5-7 5.5z" fill="#F57C00"/>
+                    <circle cx="7" cy="8" r="2.5" fill="#F57C00"/>
+                    <circle cx="12" cy="5" r="3" fill="#F57C00"/>
+                    <circle cx="17" cy="8" r="2.5" fill="#F57C00"/>
+                </svg>
+                <span>La Pastelería PET</span>
+            </div>
+            <div class="countdown-nav">
+                <span class="pulse-dot"></span> Bonos expiran: <span class="nav-timer">15:00</span>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- 1. HERO SECTION -->
+        <section class="hero min-h-screen pt-20 pb-10 relative overflow-hidden">
+            <div class="container grid-2 align-center relative z-10">
+                <div class="hero-content" data-scroll="fade-up">
+                    <div class="d-flex align-center gap-1 mb-2">
+                        <span class="text-sm font-bold text-secondary-dark uppercase tracking-wider">Cuidado Natural Animal</span>
+                    </div>
+                    <h1 class="text-5xl font-extrabold mb-3">Descubre cómo preparar snacks <span class="highlighted">saludables</span> para tu perro o gato</h1>
+                    <p class="text-xl mb-4 text-muted">Aprende a nutrir a tu mascota con amor utilizando ingredientes naturales que puedes tener en casa. Sin conservantes ni químicos.</p>
+                    
+                    <div class="cta-box glassmorphism p-3 radius-lg mt-3">
+                        <h3 class="text-2xl font-bold mb-1 text-center">Regístrate GRATIS y recibe 3 Guías de Regalo</h3>
+                        <p class="text-sm text-center mb-3 text-muted">Completa tus datos reales para enviarte el acceso a los bonos valorados en 44 USD.</p>
+                        
+                        <form id="lead-form" class="form grid gap-2" action="gracias.html">
+                            <div class="input-group">
+                                <label for="nombre">Nombre (solo nombre)</label>
+                                <input type="text" id="nombre" name="nombre" required placeholder="Ej: Laura">
+                            </div>
+                            <div class="input-group">
+                                <label for="email">Correo electrónico</label>
+                                <input type="email" id="email" name="email" required placeholder="tu@email.com">
+                            </div>
+                            <div class="input-group">
+                                <label for="whatsapp">WhatsApp</label>
+                                <input type="tel" id="whatsapp" name="whatsapp" required placeholder="+34 600...">
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-lg mt-2 w-full">
+                                <span>QUIERO RECIBIR LAS GUÍAS GRATIS</span>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+                
+                <div class="hero-image relative" data-scroll="fade-up" data-delay="0.3">
+                    <img src="https://images.unsplash.com/photo-1583337130417-3346a1be7dee?auto=format&fit=crop&q=80&w=800&h=1000" alt="Perro feliz comiendo snack natural" class="blob-shape parallax-img">
+                    <div class="floating-card top-right delay-1">
+                        <span class="text-2xl">✅</span><span class="text-sm">100% Naturales</span>
+                    </div>
+                    <div class="floating-card bottom-left delay-2">
+                        <span class="text-2xl">🐕</span><span class="text-sm">Fáciles de hacer</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. SECCIÓN PROBLEMA -->
+        <section class="problem py-10 bg-dark text-white relative overflow-hidden">
+            <div class="container text-center max-w-3xl" data-scroll="fade-up">
+                <h2 class="text-4xl font-bold mb-2 text-warning">La cruda realidad comercial</h2>
+                <p class="text-lg text-gray-300">Muchos alimentos y snacks comerciales para mascotas contienen conservantes, químicos y aditivos que, silenciosamente, pueden afectar su salud a largo plazo.</p>
+                
+                <div class="grid-3 mt-4 gap-3 stagger-container">
+                    <div class="problem-card bg-light text-dark p-3 radius-lg hover-lift stagger-item text-center">
+                        <div class="icon-xl mb-1 text-danger">⚠️</div>
+                        <h3 class="font-bold mb-1 text-xl">Químicos Tóxicos</h3>
+                        <p class="text-sm text-muted">Colorantes y aditivos artificiales innecesarios.</p>
+                    </div>
+                    <div class="problem-card bg-light text-dark p-3 radius-lg hover-lift stagger-item text-center">
+                        <div class="icon-xl mb-1 text-danger">⏱️</div>
+                        <h3 class="font-bold mb-1 text-xl">Conservantes</h3>
+                        <p class="text-sm text-muted">Aumentan el tiempo de vida útil pero disminuyen la salud real.</p>
+                    </div>
+                    <div class="problem-card bg-light text-dark p-3 radius-lg hover-lift stagger-item text-center">
+                        <div class="icon-xl mb-1 text-danger">📉</div>
+                        <h3 class="font-bold mb-1 text-xl">Baja Calidad</h3>
+                        <p class="text-sm text-muted">Subprocesos y harinas de bajo valor nutricional.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. CONEXIÓN EMOCIONAL & 4. EDUCACIÓN -->
+        <section class="emotional py-10 relative">
+            <div class="container grid-2 align-center">
+                <div class="image-wrapper" data-scroll="fade-up">
+                    <img src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?auto=format&fit=crop&q=80&w=800&h=900" alt="Gato y dueño conexión" class="blob-shape parallax-img">
+                </div>
+                <div class="content text-left" data-scroll="fade-up" data-delay="0.2">
+                    <h2 class="text-4xl font-bold mb-2">Por el amor increíble que nos dan</h2>
+                    <p class="text-lg mb-3">Sabemos que los consideras parte de tu familia. Queremos darles lo mejor y su alimentación influye directamente en su bienestar y calidad de vida.</p>
+                    
+                    <h3 class="text-2xl font-bold mb-2 mt-4 text-secondary-dark">La alternativa está en tu cocina</h3>
+                    <p class="text-lg mb-2">Es perfectamente posible preparar snacks saludables en casa usando <strong>ingredientes simples y seguros</strong> que probablemente ya tienes:</p>
+                    
+                    <ul class="check-list mt-3">
+                        <li>
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            Avena, zanahoria y manzana
+                        </li>
+                        <li>
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            Pollo y proteínas saludables
+                        </li>
+                        <li>
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            Yogur natural sin saborizantes
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. BENEFICIOS -->
+        <section class="benefits bg-secondary text-white py-10" style="background-color: var(--secondary-dark);">
+            <div class="container">
+                <div class="text-center mb-4" data-scroll="fade-up">
+                    <h2 class="text-4xl font-bold text-white mb-2">Los beneficios de cocinar en casa</h2>
+                    <p class="text-lg text-white" style="opacity: 0.9;">Controla la calidad, añade más vida.</p>
+                </div>
+                
+                <div class="grid-3 stagger-container">
+                    <!-- Flip Card 1 -->
+                    <div class="flip-card stagger-item">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <span class="icon-xl mb-1">❤️</span>
+                                <h3 class="text-2xl font-bold text-dark text-center">Mayor Bienestar</h3>
+                                <p class="text-sm text-center text-muted mt-1">Gana vitalidad, brillo en su pelo y salud digestiva.</p>
+                                <span class="flip-hint"><span>🔄</span> Pasa el cursor</span>
+                            </div>
+                            <div class="flip-card-back">
+                                <h3 class="text-3xl font-bold">Sin químicos</h3>
+                                <p class="mt-2 text-lg">Al evitar procesos industriales, fortaleces su sistema inmune.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Flip Card 2 -->
+                    <div class="flip-card stagger-item">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <span class="icon-xl mb-1">🥩</span>
+                                <h3 class="text-2xl font-bold text-dark text-center">Control Total</h3>
+                                <p class="text-sm text-center text-muted mt-1">Sabrás exactamente qué ingredientes están consumiendo.</p>
+                                <span class="flip-hint"><span>🔄</span> Pasa el cursor</span>
+                            </div>
+                            <div class="flip-card-back">
+                                <h3 class="text-3xl font-bold">100% Transparentes</h3>
+                                <p class="mt-2 text-lg">Eres tú quien elige la proteína, la fibra y la fuente natural.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Flip Card 3 -->
+                    <div class="flip-card stagger-item">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <span class="icon-xl mb-1">🎉</span>
+                                <h3 class="text-2xl font-bold text-dark text-center">Súper Divertido</h3>
+                                <p class="text-sm text-center text-muted mt-1">Una forma hermosa y diferente de consentirlo.</p>
+                                <span class="flip-hint"><span>🔄</span> Pasa el cursor</span>
+                            </div>
+                            <div class="flip-card-back">
+                                <h3 class="text-3xl font-bold">Momento Juntos</h3>
+                                <p class="mt-2 text-lg">Refuerza su vínculo creando el momento perfecto para premiarlo.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. BONOS -->
+        <section class="bonuses py-10 bg-light">
+            <div class="container text-center max-w-3xl mx-auto" data-scroll="fade-up">
+                <h2 class="text-4xl font-extrabold mb-2">Regístrate ahora y recibe <span class="text-primary">GRATIS</span></h2>
+                <p class="text-lg">Al dejarnos tus datos recibirás inmediatamente tres guías de altísimo valor. (Valor total en mercado: 44 USD).</p>
+            </div>
+            
+            <div class="container grid-3 mt-4 stagger-container">
+                <!-- Bono 1 -->
+                <div class="flip-card bonus-card stagger-item">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <span class="icon-xl mb-1">🥇</span>
+                            <h3 class="text-2xl font-bold text-dark text-center">Bono 1:<br>7 Recetas Saludables</h3>
+                            <p class="text-muted mt-1 font-bold">Consentir a tu perro en casa.</p>
+                            <span class="flip-hint"><span>🔄</span> Pasa el cursor</span>
+                        </div>
+                        <div class="flip-card-back">
+                            <h3 class="text-2xl font-bold">Incluye recetas como:</h3>
+                            <ul>
+                                <li>Galletas avena y zanahoria</li>
+                                <li>Muffins suaves de carne</li>
+                                <li>Barritas energéticas naturales</li>
+                                <li>Snacks de yogur natural</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Bono 2 -->
+                <div class="flip-card bonus-card stagger-item">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <span class="icon-xl mb-1">🥈</span>
+                            <h3 class="text-2xl font-bold text-dark text-center">Bono 2:<br>Guía Rápida Ingredientes</h3>
+                            <p class="text-muted mt-1 font-bold">Qué es seguro para ellos.</p>
+                            <span class="flip-hint"><span>🔄</span> Pasa el cursor</span>
+                        </div>
+                        <div class="flip-card-back">
+                            <h3 class="text-2xl font-bold">Incluye listas claras de:</h3>
+                            <ul>
+                                <li>Proteínas 100% seguras</li>
+                                <li>Frutas permitidas</li>
+                                <li>Verduras saludables</li>
+                                <li>Ingredientes base</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bono 3 -->
+                <div class="flip-card bonus-card stagger-item">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <span class="icon-xl mb-1">🥉</span>
+                            <h3 class="text-2xl font-bold text-dark text-center">Bono 3:<br>12 Alimentos Prohibidos</h3>
+                            <p class="text-muted mt-1 font-bold">Nunca le des esto a tu perro.</p>
+                            <span class="flip-hint"><span>🔄</span> Pasa el cursor</span>
+                        </div>
+                        <div class="flip-card-back">
+                            <h3 class="text-2xl font-bold">Peligros ocultos:</h3>
+                            <ul>
+                                <li>Chocolate y uvas</li>
+                                <li>Cebolla y xilitol</li>
+                                <li>Alimentos muy salados</li>
+                                <li>Grasas saturadas procesadas</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 7. AUTORIDAD y CTA FINAL -->
+        <section class="cta py-10 bg-dark text-white relative">
+            <div class="container text-center max-w-3xl" data-scroll="fade-up">
+                <span class="icon-xl mb-2">📈</span>
+                <h2 class="text-3xl font-bold mb-3">Únete a cientos de dueños de mascotas.</h2>
+                <p class="text-lg text-gray-300 mb-4">Cada vez más personas están optando por alimentos naturales para sus mascotas. La nutrición natural animal está ganando popularidad rápidamente.</p>
+                
+                <div class="glassmorphism p-3 radius-lg text-left" style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1);">
+                    <h3 class="text-2xl font-bold mb-2 text-center text-primary">Descubre cómo preparar snacks naturales y saludables</h3>
+                    
+                    <form id="lead-form-2" class="form grid gap-2" action="gracias.html">
+                        <div class="grid-2">
+                            <div class="input-group">
+                                <label for="nombre2" class="text-white">Nombre</label>
+                                <input type="text" id="nombre2" required placeholder="Tu nombre">
+                            </div>
+                            <div class="input-group">
+                                <label for="email2" class="text-white">Correo electrónico</label>
+                                <input type="email" id="email2" required placeholder="tu@email.com">
+                            </div>
+                        </div>
+                        <div class="input-group">
+                            <label for="whatsapp2" class="text-white">WhatsApp</label>
+                            <input type="tel" id="whatsapp2" required placeholder="+34 600...">
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-lg mt-2 w-full text-center d-flex justify-center btn-sound">
+                            <span>QUIERO MIS GUÍAS GRATIS</span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-dark text-white text-center py-10" style="padding-bottom: 2rem;">
+        <div class="container">
+            <p class="text-muted text-sm">&copy; 2026 La Pastelería PET. Todos los derechos reservados.</p>
+            <p class="text-muted text-sm mt-1">Este sitio no forma parte de la red de Facebook ni es respaldado por Meta. FACEBOOK es una marca comercial de FACEBOOK, Inc.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="script.js"></script>
+    <script>
+        // Form 2 handler
+        const form2 = document.getElementById('lead-form-2');
+        if(form2) {
+            form2.addEventListener('submit', (e) => {
+                e.preventDefault();
+                playSound();
+                const btn = form2.querySelector('button[type="submit"]');
+                btn.innerHTML = '<span>ENVIANDO... 🐾</span>';
+                btn.style.opacity = '0.8';
+                setTimeout(() => {
+                    window.location.href = form2.getAttribute('action');
+                }, 600); 
+            });
+        }
+    </script>
+</body>
+</html>
