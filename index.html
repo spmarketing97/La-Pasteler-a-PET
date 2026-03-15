@@ -3,11 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>La Pastelería PET | Snacks Saludables para tu Mascota</title>
-    <meta name="description" content="Descubre cómo preparar snacks y pasteles saludables para perros y gatos usando ingredientes naturales.">
+    <title>La Pastelería PET | Snacks y Alimentación Natural para Perros y Gatos</title>
+    <meta name="description" content="Aprende a preparar los mejores snacks, galletas y pasteles 100% saludables para tu mascota. Recetas naturales para perros y gatos sin conservantes.">
+    <meta name="keywords" content="comida natural para mascotas, snacks para perros, pasteleria para gatos, premios naturales perros, alimentacion sana mascotas, recetas para perros">
+    <meta name="author" content="La Pastelería PET">
     
-    <!-- Favicon (Inline SVG) -->
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🐾</text></svg>">
+    <!-- Open Graph SEO para Redes Sociales -->
+    <meta property="og:title" content="La Pastelería PET | Alimentación y Snacks Naturales">
+    <meta property="og:description" content="Descubre cómo mejorar la salud y esperanza de vida de tu mascota con deliciosas recetas naturales hechas en casa. ¡Únete hoy!">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1583337130417-3346a1be7dee?auto=format&fit=crop&q=80&w=1200&h=630">
+    <meta property="og:url" content="https://lapasteleriapet.com">
+    <meta property="og:type" content="website">
+    
+    <!-- Favicon SVG inline (sin archivo externo) -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' fill='none'%3E%3Crect width='32' height='32' rx='6' fill='%23F57C00'/%3E%3Cpath d='M16 23.5c-2.4 0-4.5-1.2-4.5-2.8s2-2.8 4.5-2.8 4.5 1.2 4.5 2.8-2.1 2.8-4.5 2.8z' fill='%23fff'/%3E%3Ccircle cx='10' cy='12' r='2' fill='%23fff'/%3E%3Ccircle cx='16' cy='8' r='2.4' fill='%23fff'/%3E%3Ccircle cx='22' cy='12' r='2' fill='%23fff'/%3E%3C/svg%3E">
     
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,6 +25,17 @@
     
     <!-- Custom Styles -->
     <link rel="stylesheet" href="styles.css">
+    <style>
+      /* Solo index: scroll suave al pulsar enlaces de sección */
+      html { scroll-behavior: smooth; }
+      /* Solo index: reloj a la derecha, nav secciones en el centro */
+      .index-header .header-inner { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 0.75rem; width: 100%; }
+      .index-header .header-nav-secciones { display: flex; align-items: center; justify-content: center; flex-wrap: wrap; gap: 0.5rem; flex: 1; min-width: 200px; }
+      .index-header .header-nav-secciones a { padding: 0.4rem 0.75rem; font-size: 0.9rem; font-weight: 600; color: var(--text-dark); text-decoration: none; border-radius: 0.5rem; transition: background 0.2s, color 0.2s; white-space: nowrap; }
+      .index-header .header-nav-secciones a:hover { background: rgba(245, 124, 0, 0.12); color: var(--primary); }
+      .index-header .countdown-nav { position: static; transform: none; margin-left: auto; }
+      @media (max-width: 992px) { .index-header .header-nav-secciones { order: 3; width: 100%; } .index-header .countdown-nav { margin-left: 0; } }
+    </style>
     
     <!-- Schema Markup -->
     <script type="application/ld+json">
@@ -31,103 +51,130 @@
     }
     </script>
 </head>
-<body>
-    <!-- Header -->
-    <header class="header">
-        <div class="container d-flex justify-between align-center">
-            <div class="logo">
-                <svg width="28" height="28" viewBox="0 0 24 24" fill="none">
-                    <path d="M12 21.5c-4 0-7-2-7-5.5s3.5-6.5 7-6.5 7 3 7 6.5-3 5.5-7 5.5z" fill="#F57C00"/>
-                    <circle cx="7" cy="8" r="2.5" fill="#F57C00"/>
-                    <circle cx="12" cy="5" r="3" fill="#F57C00"/>
-                    <circle cx="17" cy="8" r="2.5" fill="#F57C00"/>
-                </svg>
-                <span>La Pastelería PET</span>
-            </div>
-            <div class="countdown-nav">
-                <span class="pulse-dot"></span> Bonos expiran: <span class="nav-timer">15:00</span>
+<body id="top" data-whatsapp-number="34642941630" data-whatsapp-text="Hola, quiero información sobre La Pastelería PET">
+    <!-- Header (solo index: reloj a la derecha, botones de sección en el centro) -->
+    <header class="header index-header">
+        <div class="container">
+            <div class="header-inner d-flex align-center">
+                <div class="logo" style="z-index: 2;">
+                    <svg class="logo-icon" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                        <path d="M16 26c-3.2 0-6-1.8-6-4.5S13.2 17 16 17s6 2 6 4.5-2.8 4.5-6 4.5z" fill="currentColor"/>
+                        <circle cx="9" cy="11" r="2.8" fill="currentColor"/>
+                        <circle cx="16" cy="6" r="3.2" fill="currentColor"/>
+                        <circle cx="23" cy="11" r="2.8" fill="currentColor"/>
+                    </svg>
+                    <span class="hide-mobile">La Pastelería PET</span>
+                </div>
+                <nav class="header-nav-secciones hide-mobile" aria-label="Ir a sección">
+                    <a href="#hero">Inicio</a>
+                    <a href="#problema">Problema</a>
+                    <a href="#emocional">Alternativa</a>
+                    <a href="#beneficios">Beneficios</a>
+                    <a href="#bonos">Bonos</a>
+                    <a href="#registro">Únete</a>
+                </nav>
+                <div class="countdown-nav">
+                    <span class="pulse-dot"></span> Bonos expiran: <span class="nav-timer">1:00:00</span>
+                </div>
             </div>
         </div>
     </header>
 
     <main>
         <!-- 1. HERO SECTION -->
-        <section class="hero min-h-screen pt-20 pb-10 relative overflow-hidden">
+        <section id="hero" class="hero min-h-screen pt-20 pb-10 relative overflow-hidden">
             <div class="container grid-2 align-center relative z-10">
                 <div class="hero-content" data-scroll="fade-up">
                     <div class="d-flex align-center gap-1 mb-2">
                         <span class="text-sm font-bold text-secondary-dark uppercase tracking-wider">Cuidado Natural Animal</span>
                     </div>
-                    <h1 class="text-5xl font-extrabold mb-3">Descubre cómo preparar snacks <span class="highlighted">saludables</span> para tu perro o gato</h1>
-                    <p class="text-xl mb-4 text-muted">Aprende a nutrir a tu mascota con amor utilizando ingredientes naturales que puedes tener en casa. Sin conservantes ni químicos.</p>
+                    <h1 class="text-5xl font-extrabold mb-3">Dale a tu mascota <span class="highlighted">años de vida extra</span> con una nutrición deliciosa y 100% real</h1>
+                    <p class="text-xl mb-4 text-muted">Aprende hoy el paso a paso para preparar desde casa bocados irresistibles que curan y protegen. Sin conservantes tóxicos, sin ingredientes ocultos.</p>
                     
                     <div class="cta-box glassmorphism p-3 radius-lg mt-3">
                         <h3 class="text-2xl font-bold mb-1 text-center">Regístrate GRATIS y recibe 3 Guías de Regalo</h3>
-                        <p class="text-sm text-center mb-3 text-muted">Completa tus datos reales para enviarte el acceso a los bonos valorados en 44 USD.</p>
+                        <p class="text-sm text-center mb-3 text-muted">Completa tus datos para descargar instantáneamente los bonos valorados en 44 USD.</p>
                         
-                        <form id="lead-form" class="form grid gap-2" action="gracias.html">
+                        <form class="form grid gap-2 lead-form-web3" data-redirect="gracias.html">
+                            <input type="hidden" name="subject" value="Nuevo Lead registrado - La Pastelería PET">
                             <div class="input-group">
-                                <label for="nombre">Nombre (solo nombre)</label>
-                                <input type="text" id="nombre" name="nombre" required placeholder="Ej: Laura">
+                                <input type="text" id="name" name="name" required placeholder="Nombre sin Apellidos">
                             </div>
                             <div class="input-group">
-                                <label for="email">Correo electrónico</label>
-                                <input type="email" id="email" name="email" required placeholder="tu@email.com">
+                                <input type="email" id="email" name="email" required placeholder="Tu mejor E-Mail">
                             </div>
                             <div class="input-group">
-                                <label for="whatsapp">WhatsApp</label>
-                                <input type="tel" id="whatsapp" name="whatsapp" required placeholder="+34 600...">
+                                <input type="tel" id="whatsapp" name="whatsapp" required placeholder="Ej: +34 600...">
                             </div>
+                            <label style="display: flex; align-items: start; gap: 0.5rem; font-size: 0.8rem; color: var(--text-light); text-align: left; cursor: pointer; margin-top: 0.5rem;">
+                                <input type="checkbox" required style="width: auto; margin-top: 0.2rem; cursor: pointer;">
+                                <span>Acepto las <a href="#" data-modal="modal-privacidad" style="color: #1976D2; text-decoration: underline; font-weight: 600;">políticas de privacidad</a></span>
+                            </label>
                             <button type="submit" class="btn btn-primary btn-lg mt-2 w-full">
-                                <span>QUIERO RECIBIR LAS GUÍAS GRATIS</span>
+                                <span>¡SÍ, QUIERO LAS GUÍAS GRATIS!</span>
                             </button>
                         </form>
                     </div>
                 </div>
                 
                 <div class="hero-image relative" data-scroll="fade-up" data-delay="0.3">
-                    <img src="https://images.unsplash.com/photo-1583337130417-3346a1be7dee?auto=format&fit=crop&q=80&w=800&h=1000" alt="Perro feliz comiendo snack natural" class="blob-shape parallax-img">
-                    <div class="floating-card top-right delay-1">
-                        <span class="text-2xl">✅</span><span class="text-sm">100% Naturales</span>
-                    </div>
-                    <div class="floating-card bottom-left delay-2">
-                        <span class="text-2xl">🐕</span><span class="text-sm">Fáciles de hacer</span>
+                    <div class="hero-image-stage">
+                        <div class="hero-image-glow"></div>
+                        <div class="hero-image-frame">
+                            <img src="https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=600&q=80" alt="Mascota feliz con snacks naturales" class="hero-static-img" />
+                            <span class="hero-badge">Snacks 100% naturales</span>
+                        </div>
+                        <!-- Flotantes FUERA de la imagen, alrededor -->
+                        <div class="hero-float hero-float-bone" aria-hidden="true">🦴</div>
+                        <div class="hero-float hero-float-paw" aria-hidden="true">🐾</div>
+                        <div class="hero-float hero-float-heart" aria-hidden="true">❤️</div>
+                        <div class="hero-float hero-float-star" aria-hidden="true">✨</div>
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- 2. SECCIÓN PROBLEMA -->
-        <section class="problem py-10 bg-dark text-white relative overflow-hidden">
+        <section id="problema" class="problem py-10 bg-dark text-white relative overflow-hidden">
             <div class="container text-center max-w-3xl" data-scroll="fade-up">
                 <h2 class="text-4xl font-bold mb-2 text-warning">La cruda realidad comercial</h2>
                 <p class="text-lg text-gray-300">Muchos alimentos y snacks comerciales para mascotas contienen conservantes, químicos y aditivos que, silenciosamente, pueden afectar su salud a largo plazo.</p>
                 
-                <div class="grid-3 mt-4 gap-3 stagger-container">
-                    <div class="problem-card bg-light text-dark p-3 radius-lg hover-lift stagger-item text-center">
+                <div class="grid-3 mt-4 gap-3 stagger-container problem-cards-slider" data-scroll="fade-up">
+                    <div class="problem-card-pro stagger-item">
                         <div class="icon-xl mb-1 text-danger">⚠️</div>
                         <h3 class="font-bold mb-1 text-xl">Químicos Tóxicos</h3>
-                        <p class="text-sm text-muted">Colorantes y aditivos artificiales innecesarios.</p>
+                        <p class="text-sm text-muted">Colorantes y aditivos artificiales innecesarios ocultos en etiquetas complejas.</p>
                     </div>
-                    <div class="problem-card bg-light text-dark p-3 radius-lg hover-lift stagger-item text-center">
-                        <div class="icon-xl mb-1 text-danger">⏱️</div>
+                    <div class="problem-card-pro stagger-item">
+                        <div class="icon-xl mb-1 text-warning">⏱️</div>
                         <h3 class="font-bold mb-1 text-xl">Conservantes</h3>
-                        <p class="text-sm text-muted">Aumentan el tiempo de vida útil pero disminuyen la salud real.</p>
+                        <p class="text-sm text-muted">Aumentan el tiempo en góndola pero reducen notablemente la vitalidad natural de tu mascota a largo plazo.</p>
                     </div>
-                    <div class="problem-card bg-light text-dark p-3 radius-lg hover-lift stagger-item text-center">
-                        <div class="icon-xl mb-1 text-danger">📉</div>
+                    <div class="problem-card-pro stagger-item">
+                        <div class="icon-xl mb-1 text-primary">📉</div>
                         <h3 class="font-bold mb-1 text-xl">Baja Calidad</h3>
-                        <p class="text-sm text-muted">Subprocesos y harinas de bajo valor nutricional.</p>
+                        <p class="text-sm text-muted">Uso excesivo de harinas, subproductos y rellenos de muy bajo impacto nutricional real.</p>
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- 3. CONEXIÓN EMOCIONAL & 4. EDUCACIÓN -->
-        <section class="emotional py-10 relative">
+        <section id="emocional" class="emotional py-10 relative">
             <div class="container grid-2 align-center">
-                <div class="image-wrapper" data-scroll="fade-up">
-                    <img src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?auto=format&fit=crop&q=80&w=800&h=900" alt="Gato y dueño conexión" class="blob-shape parallax-img">
+                <div class="image-wrapper love-image relative" data-scroll="fade-up">
+                    <div class="love-image-stage">
+                        <div class="love-image-glow"></div>
+                        <div class="love-image-frame">
+                            <img src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?auto=format&fit=crop&q=80&w=700&h=800" alt="Gato feliz, snacks naturales" class="love-static-img" />
+                            <span class="love-badge">Fáciles de preparar en casa</span>
+                        </div>
+                        <div class="love-float love-float-bone" aria-hidden="true">🦴</div>
+                        <div class="love-float love-float-paw" aria-hidden="true">🐾</div>
+                        <div class="love-float love-float-heart" aria-hidden="true">❤️</div>
+                        <div class="love-float love-float-star" aria-hidden="true">✨</div>
+                    </div>
                 </div>
                 <div class="content text-left" data-scroll="fade-up" data-delay="0.2">
                     <h2 class="text-4xl font-bold mb-2">Por el amor increíble que nos dan</h2>
@@ -155,11 +202,11 @@
         </section>
 
         <!-- 5. BENEFICIOS -->
-        <section class="benefits bg-secondary text-white py-10" style="background-color: var(--secondary-dark);">
+        <section id="beneficios" class="benefits bg-secondary text-white py-10" style="background-color: var(--secondary-dark);">
             <div class="container">
                 <div class="text-center mb-4" data-scroll="fade-up">
                     <h2 class="text-4xl font-bold text-white mb-2">Los beneficios de cocinar en casa</h2>
-                    <p class="text-lg text-white" style="opacity: 0.9;">Controla la calidad, añade más vida.</p>
+                    <p class="text-lg text-white benefits-subtitle">Más salud, más control y más vínculo con tu mascota. Descubre el impacto real de cada beneficio.</p>
                 </div>
                 
                 <div class="grid-3 stagger-container">
@@ -170,11 +217,11 @@
                                 <span class="icon-xl mb-1">❤️</span>
                                 <h3 class="text-2xl font-bold text-dark text-center">Mayor Bienestar</h3>
                                 <p class="text-sm text-center text-muted mt-1">Gana vitalidad, brillo en su pelo y salud digestiva.</p>
-                                <span class="flip-hint"><span>🔄</span> Pasa el cursor</span>
+                                <span class="flip-card-hint" aria-hidden="true">↻</span>
                             </div>
                             <div class="flip-card-back">
-                                <h3 class="text-3xl font-bold">Sin químicos</h3>
-                                <p class="mt-2 text-lg">Al evitar procesos industriales, fortaleces su sistema inmune.</p>
+                                <h3 class="text-2xl font-bold">Sin químicos ocultos</h3>
+                                <p class="mt-2 text-md">Al evitar los ultra-procesados industriales, favoreces su digestión, combates alergias y reduces idas al veterinario por problemas gastrointestinales a largo plazo.</p>
                             </div>
                         </div>
                     </div>
@@ -186,11 +233,11 @@
                                 <span class="icon-xl mb-1">🥩</span>
                                 <h3 class="text-2xl font-bold text-dark text-center">Control Total</h3>
                                 <p class="text-sm text-center text-muted mt-1">Sabrás exactamente qué ingredientes están consumiendo.</p>
-                                <span class="flip-hint"><span>🔄</span> Pasa el cursor</span>
+                                <span class="flip-card-hint" aria-hidden="true">↻</span>
                             </div>
                             <div class="flip-card-back">
-                                <h3 class="text-3xl font-bold">100% Transparentes</h3>
-                                <p class="mt-2 text-lg">Eres tú quien elige la proteína, la fibra y la fuente natural.</p>
+                                <h3 class="text-2xl font-bold">Transparencia Total</h3>
+                                <p class="mt-2 text-md">Eres el Chef. Tú decides la procedencia de la proteína, la calidad del aceite y las vitaminas orgánicas para una nutrición absolutamente premium hecha en casa.</p>
                             </div>
                         </div>
                     </div>
@@ -202,11 +249,11 @@
                                 <span class="icon-xl mb-1">🎉</span>
                                 <h3 class="text-2xl font-bold text-dark text-center">Súper Divertido</h3>
                                 <p class="text-sm text-center text-muted mt-1">Una forma hermosa y diferente de consentirlo.</p>
-                                <span class="flip-hint"><span>🔄</span> Pasa el cursor</span>
+                                <span class="flip-card-hint" aria-hidden="true">↻</span>
                             </div>
                             <div class="flip-card-back">
-                                <h3 class="text-3xl font-bold">Momento Juntos</h3>
-                                <p class="mt-2 text-lg">Refuerza su vínculo creando el momento perfecto para premiarlo.</p>
+                                <h3 class="text-2xl font-bold">Refuerza el vínculo</h3>
+                                <p class="mt-2 text-md">Ver cómo disfruta algo hecho por tus propias manos es invaluable. Ideal para rutinas de entrenamiento, premios sorpresa o celebrar su cumpleaños con una tarta hecha a la medida.</p>
                             </div>
                         </div>
                     </div>
@@ -215,10 +262,10 @@
         </section>
 
         <!-- 6. BONOS -->
-        <section class="bonuses py-10 bg-light">
+        <section id="bonos" class="bonuses py-10 bg-light">
             <div class="container text-center max-w-3xl mx-auto" data-scroll="fade-up">
-                <h2 class="text-4xl font-extrabold mb-2">Regístrate ahora y recibe <span class="text-primary">GRATIS</span></h2>
-                <p class="text-lg">Al dejarnos tus datos recibirás inmediatamente tres guías de altísimo valor. (Valor total en mercado: 44 USD).</p>
+                <h2 class="text-4xl font-extrabold mb-2">Tus 3 guías gratis: regístrate y descárgalas al instante</h2>
+                <p class="text-lg bonuses-subtitle">Tres guías descargables (44 USD de valor). Descárgalas al instante tras registrarte. Sin compromiso.</p>
             </div>
             
             <div class="container grid-3 mt-4 stagger-container">
@@ -229,7 +276,7 @@
                             <span class="icon-xl mb-1">🥇</span>
                             <h3 class="text-2xl font-bold text-dark text-center">Bono 1:<br>7 Recetas Saludables</h3>
                             <p class="text-muted mt-1 font-bold">Consentir a tu perro en casa.</p>
-                            <span class="flip-hint"><span>🔄</span> Pasa el cursor</span>
+                            <span class="flip-card-hint" aria-hidden="true">↻</span>
                         </div>
                         <div class="flip-card-back">
                             <h3 class="text-2xl font-bold">Incluye recetas como:</h3>
@@ -250,7 +297,7 @@
                             <span class="icon-xl mb-1">🥈</span>
                             <h3 class="text-2xl font-bold text-dark text-center">Bono 2:<br>Guía Rápida Ingredientes</h3>
                             <p class="text-muted mt-1 font-bold">Qué es seguro para ellos.</p>
-                            <span class="flip-hint"><span>🔄</span> Pasa el cursor</span>
+                            <span class="flip-card-hint" aria-hidden="true">↻</span>
                         </div>
                         <div class="flip-card-back">
                             <h3 class="text-2xl font-bold">Incluye listas claras de:</h3>
@@ -271,7 +318,7 @@
                             <span class="icon-xl mb-1">🥉</span>
                             <h3 class="text-2xl font-bold text-dark text-center">Bono 3:<br>12 Alimentos Prohibidos</h3>
                             <p class="text-muted mt-1 font-bold">Nunca le des esto a tu perro.</p>
-                            <span class="flip-hint"><span>🔄</span> Pasa el cursor</span>
+                            <span class="flip-card-hint" aria-hidden="true">↻</span>
                         </div>
                         <div class="flip-card-back">
                             <h3 class="text-2xl font-bold">Peligros ocultos:</h3>
@@ -288,7 +335,7 @@
         </section>
 
         <!-- 7. AUTORIDAD y CTA FINAL -->
-        <section class="cta py-10 bg-dark text-white relative">
+        <section id="registro" class="cta py-10 bg-dark text-white relative">
             <div class="container text-center max-w-3xl" data-scroll="fade-up">
                 <span class="icon-xl mb-2">📈</span>
                 <h2 class="text-3xl font-bold mb-3">Únete a cientos de dueños de mascotas.</h2>
@@ -300,20 +347,21 @@
                     <form id="lead-form-2" class="form grid gap-2" action="gracias.html">
                         <div class="grid-2">
                             <div class="input-group">
-                                <label for="nombre2" class="text-white">Nombre</label>
-                                <input type="text" id="nombre2" required placeholder="Tu nombre">
+                                <input type="text" id="nombre2" required placeholder="Nombre sin Apellidos">
                             </div>
                             <div class="input-group">
-                                <label for="email2" class="text-white">Correo electrónico</label>
-                                <input type="email" id="email2" required placeholder="tu@email.com">
+                                <input type="email" id="email2" required placeholder="Tu mejor E-Mail">
                             </div>
                         </div>
-                        <div class="input-group">
-                            <label for="whatsapp2" class="text-white">WhatsApp</label>
-                            <input type="tel" id="whatsapp2" required placeholder="+34 600...">
+                        <div class="input-group mt-2">
+                            <input type="tel" id="whatsapp2" required placeholder="Ej: +34 600...">
                         </div>
+                        <label style="display: flex; align-items: start; gap: 0.5rem; font-size: 0.8rem; color: #bbbbbb; text-align: left; cursor: pointer; justify-content: center; margin-top: 0.5rem;">
+                            <input type="checkbox" required style="width: auto; margin-top: 0.2rem; cursor: pointer;">
+                            <span class="text-white">Acepto las <a href="#" data-modal="modal-privacidad" style="color: #64B5F6; text-decoration: underline; font-weight: 600;">políticas de privacidad</a></span>
+                        </label>
                         <button type="submit" class="btn btn-primary btn-lg mt-2 w-full text-center d-flex justify-center btn-sound">
-                            <span>QUIERO MIS GUÍAS GRATIS</span>
+                            <span>¡SÍ, QUIERO LAS GUÍAS GRATIS!</span>
                         </button>
                     </form>
                 </div>
@@ -321,18 +369,164 @@
         </section>
     </main>
 
-    <footer class="bg-dark text-white text-center py-10" style="padding-bottom: 2rem;">
+    <!-- Footer -->
+    <footer class="bg-dark text-white pt-10 pb-4 text-center">
         <div class="container">
-            <p class="text-muted text-sm">&copy; 2026 La Pastelería PET. Todos los derechos reservados.</p>
-            <p class="text-muted text-sm mt-1">Este sitio no forma parte de la red de Facebook ni es respaldado por Meta. FACEBOOK es una marca comercial de FACEBOOK, Inc.</p>
+            <h2 class="text-3xl font-extrabold text-primary mb-2" style="font-family: var(--font-heading);">La Pastelería PET</h2>
+            <p class="footer-tagline text-white text-lg font-bold mb-4">
+                Ayudando a miles de dueños a transformar la nutrición de sus mascotas a través de métodos naturales, seguros y deliciosos hechos en casa.
+            </p>
+            
+            <div class="flex justify-center flex-wrap align-center text-gray-400 text-md mb-6" style="gap: 1rem;">
+                <a href="#" class="hover-text-white hover:text-primary transition" data-modal="modal-privacidad">Política de Privacidad</a>
+                <span style="opacity: 0.3;">|</span>
+                <a href="#" class="hover-text-white hover:text-primary transition" data-modal="modal-aviso">Aviso Legal</a>
+                <span style="opacity: 0.3;">|</span>
+                <a href="#" class="hover-text-white hover:text-primary transition" data-modal="modal-cookies">Política de Cookies</a>
+            </div>
+
+            <p class="text-sm text-gray-500">
+                &copy; 2026 La Pastelería PET. Todos los derechos reservados.
+            </p>
         </div>
     </footer>
+
+    <div class="modal-overlay" id="modal-privacidad">
+        <div class="modal-content text-left">
+            <span class="modal-close">&times;</span>
+            <h2 class="text-3xl font-extrabold mb-4 text-dark border-bottom pb-2">Política de Privacidad Integral</h2>
+            <div class="text-muted text-sm space-y-3" style="line-height: 1.8;">
+                <p><strong>Última actualización:</strong> 2026</p>
+                <p>En <strong>La Pastelería PET</strong> ("el Responsable", "nosotros", "nuestro"), nos tomamos muy en serio la privacidad y la protección de los datos personales de nuestros usuarios ("Usuario", "usted"). La presente Política de Privacidad detalla exhaustivamente cómo recolectamos, utilizamos, almacenamos, divulgamos y protegemos sus datos cuando visita nuestro sitio web o adquiere nuestros productos, en estricto cumplimiento del Reglamento General de Protección de Datos (RGPD - Reglamento UE 2016/679) y demás legislaciones aplicables en España y la Unión Europea respecto a la privacidad digital.</p>
+                
+                <h4 class="font-bold text-dark text-lg mt-4">1. Identidad del Responsable del Tratamiento</h4>
+                <p>El tratamiento de los datos personales recopilados a través de este sitio web es responsabilidad exclusiva de La Pastelería PET. Para cualquier consulta, petición o reclamación relacionada con la protección de datos, puede contactarnos a través de los canales de atención al cliente facilitados en la confirmación de su registro u orden.</p>
+                
+                <h4 class="font-bold text-dark text-lg mt-4">2. Categorías de Datos Recopilados</h4>
+                <p>Al utilizar nuestra web, el Usuario puede proporcionarnos directamente información mediante los formularios de contacto, tales como:</p>
+                <ul class="list-disc pl-5">
+                    <li>Datos Identificativos: Nombre, apellido (solicitado según la interacción).</li>
+                    <li>Datos de Contacto: Correo electrónico y número de teléfono (WhatsApp).</li>
+                    <li>Datos de Navegación: IPs, metadatos y cookies (ver Política de Cookies separada).</li>
+                </ul>
+
+                <h4 class="font-bold text-dark text-lg mt-4">3. Finalidad del Tratamiento de los Datos</h4>
+                <p>Registramos y procesamos su información con las siguientes finalidades fundamentales:</p>
+                <ul class="list-disc pl-5">
+                    <li><strong>Envío de infoproductos:</strong> Tramitar y entregar instantáneamente los bonos digitales gratuitos y el acceso al ecosistema de hotmart tras la inscripción.</li>
+                    <li><strong>Comunicación comercial y publicitaria:</strong> Enviar Newsletters informativos, consejos nutricionales para sus mascotas y notificaciones de descuentos y programas formativos vinculados (Marketing de Afiliados / Ofertas propias).</li>
+                    <li><strong>Mejora de experiencia:</strong> Personalizar su asistencia técnica, realizar estudios estadísticos y optimizar campañas a partir del uso que le da al portal web.</li>
+                </ul>
+
+                <h4 class="font-bold text-dark text-lg mt-4">4. Legitimación para el Tratamiento</h4>
+                <p>La base legal para el tratamiento de sus datos es el <strong>consentimiento expreso e inequívoco</strong>, el cual se recaba en el momento en el que el Usuario marca voluntariamente la casilla correspondiente ("Acepto las políticas de privacidad") antes de acceder al botón de inscripción, conforme al artículo 6.1.a del RGPD.</p>
+
+                <h4 class="font-bold text-dark text-lg mt-4">5. Plazos de Conservación de Datos</h4>
+                <p>Mantendremos y procesaremos sus datos durante el tiempo que sea estrictamente necesario para cumplir de forma idónea las finalidades expuestas en este documento, o bien hasta que el Usuario ejerza su derecho explícito de supresión y/u oposición. Si decide darse de baja, sus datos ingresarán en listas de exclusión seguras para no molestarle.</p>
+
+                <h4 class="font-bold text-dark text-lg mt-4">6. Cesión de Datos y Destinatarios (Terceros)</h4>
+                <p>Prometemos tajantemente que <strong>no vendemos, ni permutamos ni alquilamos su información personal a entidades de terceros</strong>. Para llevar a cabo de manera eficiente nuestros servicios web, es posible compartir determinados accesos mediante encriptación con plataformas líderes:</p>
+                <ul class="list-disc pl-5">
+                    <li><strong>Web3Forms / Formularios:</strong> Como proveedores directos para la gestión del correo masivo.</li>
+                    <li><strong>Hotmart / Gestores de Pago:</strong> En caso de que el Usuario formalice la compra de nuestros programas completos, la transacción segura, datos bancarios y su respectivo KYC pertenece y es operado estrictamente bajo las directrices y muros de la plataforma Hotmart BV.</li>
+                </ul>
+
+                <h4 class="font-bold text-dark text-lg mt-4">7. Ejercicio de los Derechos ARCO y Análogos</h4>
+                <p>Usted puede y tiene toda la libertad jurídica de ejercer sus derechos de:</p>
+                <ul class="list-disc pl-5">
+                    <li><strong>A</strong>cceso: Conocer qué datos custodiamos sobre usted.</li>
+                    <li><strong>R</strong>ectificación: Modificar información imprecisa.</li>
+                    <li><strong>C</strong>ancelación o Supresión (Derecho al olvido): Solicitarnos la eliminación de su rastro en nuestra BD.</li>
+                    <li><strong>O</strong>posición y Limitación: Reprimir un tipo de información que usted no desea recibir.</li>
+                </ul>
+                <p>Este derecho lo puede ejercer directamente solicitándolo vía el enlace "Unsubscribe" / "Dar de Baja" colocado al pie de todos nuestros correos comerciales, o emitiendo un correo de solicitud hacia la administración.</p>
+                
+                <h4 class="font-bold text-dark text-lg mt-4">8. Modificaciones y Seguridad</h4>
+                <p>La Pastelería PET puede alterar esta Política debido a modernizaciones legales. Notificaremos inmediatamente a nuestra lista cuando se presenten cambios sustanciales del RGPD. Aplicamos protocolos SSL para mantener seguro el canal de recepción.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL AVISO LEGAL -->
+    <div class="modal-overlay" id="modal-aviso">
+        <div class="modal-content text-left">
+            <span class="modal-close">&times;</span>
+            <h2 class="text-3xl font-extrabold mb-4 text-dark border-bottom pb-2">Aviso Legal Profesional</h2>
+            <div class="text-muted text-sm space-y-3" style="line-height: 1.8;">
+                <p>El uso, acceso o navegación persistente por la web de La Pastelería PET acarrea implícita la denominación de "Usuario" y engendra el sometimiento sin reservas de las siguientes cláusulas legales que definen el contrato de operación a nivel global.</p>
+                
+                <h4 class="font-bold text-dark text-lg mt-4">1. Propiedad Intelectual e Industrial Estricta</h4>
+                <p>Se declara fehacientemente que la estructura del portal web, toda la batería de contenidos (videos, textos, tipografías, logos, gráficos y diagramas), las estrategias publicitarias emitidas, las estructuras de recetas en las guías y códigos fuente integrados en esta web, recaen bajo el dominio directo de los propietarios y editores de <strong>La Pastelería PET</strong> y se encuentran intensamente amparados de acuerdo con la Ley de Propiedad Intelectual internacional. Está rotunda, terminante y claramente <strong>prohibida cualquier modificación, comercialización o reproducción no oficial</strong> de todo este contenido protegido. Cualquier caso de ingeniería inversa hacia esta obra intelectual será llevado a procesos de protección de copyright.</p>
+                
+                <h4 class="font-bold text-dark text-lg mt-4">2. Descargo de Responsabilidad Médico Pediátrica/Veterinaria</h4>
+                <p>Bajo ningún esquema visual, auditivo o textual de esta página y de los infoproductos vinculados se ejerce activamente la profesión Médica Veterinaria. Este portal es una experiencia con naturaleza estrictamente <strong>EDUCATIVA Y ORIENTATIVA</strong>. Las fórmulas, dietas y suplementos recomendados provienen de un contexto empírico de bienestar natural.</p>
+                <p>Las recetas en el ecosistema <strong>no deben entenderse ni usarse bajo ningún concepto</strong> como reemplazos y planes definitivos completos contra enfermedades, cirugías u operaciones complejas de su animal y se considera que <strong>se requiere imperativamente la visita y verificación previa por un Veterinario Zootecnista diplomado formal</strong> antes de un cambio crónico de alimentos. La Pastelería PET queda eximido de incidencias por factores atípicos reaccionarios de las mascotas.</p>
+                
+                <h4 class="font-bold text-dark text-lg mt-4">3. Cláusula de Resultados Atípicos</h4>
+                <p>Los testimonios insertados provienen de consumidores reales que decidieron enviar sus casos de éxito con resultados satisfactorios utilizando el programa de repostería. Éstos deben concebirse como "resultados atípicos". Debido al nivel de disciplina de cada creador, pre-condición corporal, edad o estrés en el perro y gato, garantizamos la pureza de la metodología, pero bajo ninguna circunstancia juridisdicente garantizamos mecánicamente el mismo resultado biológico, puesto que interfiere fuertemente el propio tutor en la cocina final.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL COOKIES -->
+    <div class="modal-overlay" id="modal-cookies">
+        <div class="modal-content text-left">
+            <span class="modal-close">&times;</span>
+            <h2 class="text-3xl font-extrabold mb-4 text-dark border-bottom pb-2">Política de Cookies Avanzada</h2>
+            <div class="text-muted text-sm space-y-3" style="line-height: 1.8;">
+                <p>Con asertividad corporativa regulada por la Ley de Servicios de la Sociedad de la Información y de Comercio Electrónico (LSSI). Nuestra página invoca Cookies para proveer el mayor grado tecnológico posible en velocidad y captar la analítica que nos asiste como compañía digital.</p>
+                
+                <h4 class="font-bold text-dark text-lg mt-4">¿Qué definimos como "Cookie"?</h4>
+                <p>Consisten en archivos criptográficos inofensivos de tipo texto (puntos de información). Estos archivos mínimos recaen sobre el browser / navegador desde donde se accede y son utilizados temporal o prolongadamente para identificar acciones esenciales del hardware.</p>
+                
+                <h4 class="font-bold text-dark text-lg mt-4">Cookies utilizadas en el servicio y su tipología</h4>
+                <ul class="list-disc pl-5">
+                    <li><strong>Cookies Estrictamente Técinas (de sesión y persistentes):</strong> Permiten que el formulario no rechace el envío protegiéndonos contra CSRF, y ayudan a identificar temporalmente el flujo interactivo. (Retienen, por ejemplo, los Pop Ups que ya has omitido `sessionStorage` y `localStorage` para no obstaculizarte en la web ininterrumpidamente). Son inofensivas e indispensables.</li>
+                    <li><strong>Cookies Analíticas / Estadísticas:</strong> Permiten la cuantometría (conteo exacto de visitantes del tráfico) y saber si provienes de un link orgánico, patrocinado (Meta, Ads), y conocer el porcentaje de rebote. Los datos estadísticos recabados son conglomerados (anónimos).</li>
+                    <li><strong>Cookies De Rastreo / Performance Publicitario o Píxeles:</strong> Las campañas y Píxeles se enlazan para entender el ratio en conversión y crear en el futuro perfiles para realizar 'Remarketing' si no decidiste accionar la oferta de hoy, intentándolo nuevamente por otras vías promocionales legítimas en la RED abierta.</li>
+                </ul>
+                
+                <h4 class="font-bold text-dark text-lg mt-4">Revocación, Denegación o Retiro de las Cookies</h4>
+                <p>Tienes a disposición directa las métricas internas de tu terminal, ordenador y browser y puedes desactivarlo usando las siguientes instrucciones universales y propias de los gigantes tecnológicos:</p>
+                <ul class="list-disc pl-5">
+                    <li>Google Chrome: Menú Configuración -> Privacidad -> Cookies.</li>
+                    <li>Firefox: Opciones -> Privacidad & Seguridad -> Historial.</li>
+                    <li>Safari: Preferencias -> Seguridad.</li>
+                </ul>
+                <p>Inhabilitarlas y repelerlas es bienvenido por el sistema, sin embargo el User Interface podría desencajar en elementos puntuales (Popups redundantes o cierres abruptos de Layout).</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- COOKIE BANNER SMALL -->
+    <div class="cookie-banner" id="cookieBanner">
+        <p>Mejoramos tu experiencia con el uso de cookies. Si continúas navegando en el sitio, consideramos que aceptas la <a href="#" data-modal="modal-cookies" style="text-decoration: underline; color: var(--primary);">Política de Cookies</a>.</p>
+        <button class="btn btn-primary w-full" id="acceptCookies">Entendido</button>
+    </div>
+
+    <!-- Popups testimonios flotantes (izquierda) -->
+    <section class="testimonial-popup-zone" aria-label="Testimonios">
+        <div id="testimonial-popup-container"></div>
+    </section>
+
+    <!-- Botón subir (derecha, misma altura que testimonios) -->
+    <a href="#top" class="scroll-top-btn" aria-label="Subir al inicio" title="Subir al inicio">↑</a>
 
     <!-- Scripts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
     <script src="script.js"></script>
     <script>
+        // Popup al intentar salir (cerrar pestaña, ir a otra página): solo en index, nunca al cargar ni al hacer scroll
+        (function() {
+            var mensaje = '¡Espera! Te perder\u00e1s los bonos GRATIS para tu mascota. \u00bfSeguro que quieres irte?';
+            window.addEventListener('beforeunload', function(e) {
+                e.preventDefault();
+                e.returnValue = mensaje;
+                return mensaje;
+            });
+        })();
+
         // Form 2 handler
         const form2 = document.getElementById('lead-form-2');
         if(form2) {
