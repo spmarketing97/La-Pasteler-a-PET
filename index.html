@@ -18,9 +18,14 @@
     <!-- Favicon SVG inline (sin archivo externo) -->
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' fill='none'%3E%3Crect width='32' height='32' rx='6' fill='%23F57C00'/%3E%3Cpath d='M16 23.5c-2.4 0-4.5-1.2-4.5-2.8s2-2.8 4.5-2.8 4.5 1.2 4.5 2.8-2.1 2.8-4.5 2.8z' fill='%23fff'/%3E%3Ccircle cx='10' cy='12' r='2' fill='%23fff'/%3E%3Ccircle cx='16' cy='8' r='2.4' fill='%23fff'/%3E%3Ccircle cx='22' cy='12' r='2' fill='%23fff'/%3E%3C/svg%3E">
     
-    <!-- Google Fonts -->
+    <!-- Carga rápida: preconnect y preload de lo crítico -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://images.unsplash.com" crossorigin>
+    <link rel="preload" href="https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=600&q=80" as="image">
+    <link rel="preload" href="styles.css" as="style">
+    
+    <!-- Google Fonts (display=swap para no bloquear texto) -->
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
     
     <!-- Custom Styles -->
@@ -122,7 +127,7 @@
                     <div class="hero-image-stage">
                         <div class="hero-image-glow"></div>
                         <div class="hero-image-frame">
-                            <img src="https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=600&q=80" alt="Mascota feliz con snacks naturales" class="hero-static-img" />
+                            <img src="https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=600&q=80" alt="Mascota feliz con snacks naturales" class="hero-static-img" width="600" height="400" fetchpriority="high" decoding="async" />
                             <span class="hero-badge">Snacks 100% naturales</span>
                         </div>
                         <!-- Flotantes FUERA de la imagen, alrededor -->
@@ -168,7 +173,7 @@
                     <div class="love-image-stage">
                         <div class="love-image-glow"></div>
                         <div class="love-image-frame">
-                            <img src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?auto=format&fit=crop&q=80&w=700&h=800" alt="Gato feliz, snacks naturales" class="love-static-img" />
+                            <img src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?auto=format&fit=crop&q=80&w=700&h=800" alt="Gato feliz, snacks naturales" class="love-static-img" width="700" height="800" loading="lazy" decoding="async" />
                             <span class="love-badge">Fáciles de preparar en casa</span>
                         </div>
                         <div class="love-float love-float-bone" aria-hidden="true">🦴</div>
@@ -513,9 +518,9 @@
     <!-- Botón subir (derecha, misma altura que testimonios) -->
     <a href="#top" class="scroll-top-btn" aria-label="Subir al inicio" title="Subir al inicio">↑</a>
 
-    <!-- Scripts -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <!-- Scripts: GSAP en defer (no bloquean); script.js al final para formularios -->
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
     <script src="script.js"></script>
     <script>
         // Form 2 handler (CTA final)
