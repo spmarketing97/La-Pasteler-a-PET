@@ -96,6 +96,7 @@
                         <p class="text-sm text-center mb-3 text-muted">Completa tus datos para descargar instantáneamente los bonos valorados en 44 USD.</p>
                         
                         <form class="form grid gap-2 lead-form-web3" data-redirect="gracias.html">
+                            <input type="hidden" name="access_key" value="73515417-ca5d-4084-b2a0-1067205252eb">
                             <input type="hidden" name="subject" value="Nuevo Lead registrado - La Pastelería PET">
                             <div class="input-group">
                                 <input type="text" id="name" name="name" required placeholder="Nombre sin Apellidos">
@@ -517,17 +518,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
     <script src="script.js"></script>
     <script>
-        // Popup al intentar salir (cerrar pestaña, ir a otra página): solo en index, nunca al cargar ni al hacer scroll
-        (function() {
-            var mensaje = '¡Espera! Te perder\u00e1s los bonos GRATIS para tu mascota. \u00bfSeguro que quieres irte?';
-            window.addEventListener('beforeunload', function(e) {
-                e.preventDefault();
-                e.returnValue = mensaje;
-                return mensaje;
-            });
-        })();
-
-        // Form 2 handler
+        // Form 2 handler (CTA final)
         const form2 = document.getElementById('lead-form-2');
         if(form2) {
             form2.addEventListener('submit', (e) => {

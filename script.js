@@ -99,28 +99,29 @@ function initForm() {
 
             const formData = new FormData(form);
             const object = Object.fromEntries(formData);
-            const json = JSON.stringify(object);
+            const accessKey = (object.access_key || '').toString().trim();
+            const hasValidKey = accessKey && accessKey.length > 20 && !/^TU_|placeholder/i.test(accessKey);
 
-            try {
-                const response = await fetch('https://api.web3forms.com/submit', {
-                    method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/json',
-                        'Accept': 'application/json'
-                    },
-                    body: json
-                });
-                const result = await response.json();
-                if (response.status == 200) {
-                    // Success, redirect
-                    window.location.href = form.getAttribute('data-redirect') || 'gracias.html';
-                } else {
-                    alert("Error enviando datos, sin embargo serás redirigido.");
-                    window.location.href = 'gracias.html';
+            if (hasValidKey) {
+                try {
+                    const response = await fetch('https://api.web3forms.com/submit', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json',
+                            'Accept': 'application/json'
+                        },
+                        body: JSON.stringify(object)
+                    });
+                    const result = await response.json();
+                    if (response.status !== 200) {
+                        console.warn('Web3Forms:', result.message || response.status);
+                    }
+                } catch (err) {
+                    console.warn('Form submit:', err);
                 }
-            } catch (error) {
-                window.location.href = 'gracias.html';
             }
+
+            window.location.href = form.getAttribute('data-redirect') || 'gracias.html';
         });
     });
 
