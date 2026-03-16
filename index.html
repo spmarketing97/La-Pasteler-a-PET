@@ -40,6 +40,64 @@
       .index-header .header-nav-secciones a:hover { background: rgba(245, 124, 0, 0.12); color: var(--primary); }
       .index-header .countdown-nav { position: static; transform: none; margin-left: auto; }
       @media (max-width: 992px) { .index-header .header-nav-secciones { order: 3; width: 100%; } .index-header .countdown-nav { margin-left: 0; } }
+      /* FAQ acordeón minimalista */
+      .faq-accordion {
+        display: flex;
+        flex-direction: column;
+        gap: 0.75rem;
+      }
+      .faq-item {
+        border-radius: 0.9rem;
+        border: 1px solid rgba(0,0,0,0.05);
+        background: #ffffff;
+        box-shadow: 0 8px 20px rgba(15, 23, 42, 0.06);
+        overflow: hidden;
+      }
+      .faq-item summary {
+        list-style: none;
+        padding: 0.9rem 1.1rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 0.75rem;
+        cursor: pointer;
+        font-weight: 600;
+        font-size: 0.98rem;
+        color: #111827;
+      }
+      .faq-item summary::-webkit-details-marker {
+        display: none;
+      }
+      .faq-question {
+        flex: 1;
+      }
+      .faq-toggle {
+        width: 1.6rem;
+        height: 1.6rem;
+        border-radius: 999px;
+        border: 1px solid rgba(15, 23, 42, 0.12);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 0.9rem;
+        color: #4B5563;
+        background: #F9FAFB;
+        flex-shrink: 0;
+      }
+      .faq-item[open] .faq-toggle {
+        background: rgba(245, 124, 0, 0.08);
+        border-color: rgba(245, 124, 0, 0.4);
+        color: #F57C00;
+      }
+      .faq-answer {
+        padding: 0 1.1rem 1rem;
+        font-size: 0.9rem;
+        color: #4B5563;
+        line-height: 1.6;
+      }
+      .faq-answer p {
+        margin: 0.2rem 0 0;
+      }
     </style>
     
     <!-- Schema Markup -->
@@ -340,6 +398,132 @@
             </div>
         </section>
 
+        <!-- 6.1 PREGUNTAS FRECUENTES -->
+        <section class="faq py-10 bg-light">
+            <div class="container max-w-3xl mx-auto" data-scroll="fade-up">
+                <h2 class="text-3xl font-extrabold mb-4 text-center">Preguntas frecuentes sobre el programa y las guías</h2>
+                <p class="text-md text-center text-muted mb-5">
+                    Aquí resolvemos las dudas más habituales sobre las 3 guías gratuitas y sobre el programa formativo completo de La Pastelería PET.
+                </p>
+
+                <div class="faq-accordion">
+                    <details class="faq-item" open>
+                        <summary>
+                            <span class="faq-question">¿Qué voy a aprender exactamente con las guías y el programa?</span>
+                            <span class="faq-toggle">+</span>
+                        </summary>
+                        <div class="faq-answer">
+                            <p>
+                                Con las 3 guías obtendrás recetas sencillas de snacks y galletas, una guía rápida de ingredientes
+                                seguros y un listado de 12 alimentos totalmente prohibidos. En el programa completo profundizarás
+                                en técnicas de horneado, conservación, variantes según tamaño y edad, y la creación de un pequeño
+                                “menú de pastelería” para tu mascota o incluso para ofrecerlo como servicio.
+                            </p>
+                        </div>
+                    </details>
+
+                    <details class="faq-item">
+                        <summary>
+                            <span class="faq-question">¿Necesito ser experta/o en cocina para seguir el programa?</span>
+                            <span class="faq-toggle">+</span>
+                        </summary>
+                        <div class="faq-answer">
+                            <p>
+                                No. Tanto las guías como el programa están pensados para principiantes. Empezamos con recetas
+                                muy simples explicadas paso a paso, con medidas claras y utensilios básicos que ya tienes en casa.
+                                A medida que avanzas, irás ganando confianza para preparar snacks y pasteles más elaborados sin estrés.
+                            </p>
+                        </div>
+                    </details>
+
+                    <details class="faq-item">
+                        <summary>
+                            <span class="faq-question">¿Para qué tipo de mascotas está pensado el contenido?</span>
+                            <span class="faq-toggle">+</span>
+                        </summary>
+                        <div class="faq-answer">
+                            <p>
+                                La mayor parte de las recetas y ejemplos están orientados a perros, pero muchas bases de ingredientes
+                                y advertencias también son útiles para gatos. En el programa siempre indicamos cuándo una preparación
+                                es solo para perros y cuándo puede adaptarse o no a otras mascotas, para que tengas total claridad.
+                            </p>
+                        </div>
+                    </details>
+
+                    <details class="faq-item">
+                        <summary>
+                            <span class="faq-question">¿Son snacks completos nutricionalmente o solo “premios”?</span>
+                            <span class="faq-toggle">+</span>
+                        </summary>
+                        <div class="faq-answer">
+                            <p>
+                                Todo el contenido está enfocado en <strong>snacks y premios saludables</strong> que complementan la dieta diaria.
+                                No sustituyen el plan nutricional principal recomendado por tu veterinario, pero sí te ayudan a dejar
+                                de usar premios ultra-procesados y pasar a opciones naturales, caseras y mucho más seguras.
+                            </p>
+                        </div>
+                    </details>
+
+                    <details class="faq-item">
+                        <summary>
+                            <span class="faq-question">¿En qué formato recibiré las guías y el programa?</span>
+                            <span class="faq-toggle">+</span>
+                        </summary>
+                        <div class="faq-answer">
+                            <p>
+                                Las 3 guías se entregan en formato digital (PDF) para que puedas consultarlas desde el móvil, tablet u ordenador.
+                                El programa completo se accede online a través de Hotmart, donde tendrás tus módulos, lecciones paso a paso
+                                y materiales complementarios para descargar cuando quieras.
+                            </p>
+                        </div>
+                    </details>
+
+                    <details class="faq-item">
+                        <summary>
+                            <span class="faq-question">¿Hay algún coste oculto por registrarme y qué pasa si luego quiero el programa?</span>
+                            <span class="faq-toggle">+</span>
+                        </summary>
+                        <div class="faq-answer">
+                            <p>
+                                No. Las 3 guías son 100% gratuitas y no hay cargos ocultos. Si más adelante decides acceder al programa completo,
+                                te informaremos de las condiciones, del precio y de las posibles promociones vigentes, siempre con total transparencia
+                                para que decidas con calma si es para ti.
+                            </p>
+                        </div>
+                    </details>
+
+                    <details class="faq-item">
+                        <summary>
+                            <span class="faq-question">¿Qué pasa después de descargar las guías y apuntarme al programa?</span>
+                            <span class="faq-toggle">+</span>
+                        </summary>
+                        <div class="faq-answer">
+                            <p>
+                                Tras descargar las guías podrás empezar a aplicar recetas y recomendaciones desde el primer día.
+                                Si te unes al programa, seguirás un recorrido ordenado de módulos que te lleva desde lo más básico
+                                hasta la creación de tu propia “pastelería PET” en casa, con acceso a futuras actualizaciones
+                                y comunicaciones de soporte.
+                            </p>
+                        </div>
+                    </details>
+
+                    <details class="faq-item">
+                        <summary>
+                            <span class="faq-question">¿El programa sustituye la opinión de mi veterinario?</span>
+                            <span class="faq-toggle">+</span>
+                        </summary>
+                        <div class="faq-answer">
+                            <p>
+                                No. Todo el contenido, tanto de las guías como del programa, es educativo y orientativo.
+                                Te ayuda a mejorar los snacks que preparas en casa, pero nunca reemplaza las revisiones,
+                                diagnósticos ni planes nutricionales personalizados de tu veterinario de confianza.
+                            </p>
+                        </div>
+                    </details>
+                </div>
+            </div>
+        </section>
+
         <!-- 7. AUTORIDAD y CTA FINAL -->
         <section id="registro" class="cta py-10 bg-dark text-white relative">
             <div class="container text-center max-w-3xl" data-scroll="fade-up">
@@ -525,7 +709,7 @@
     <script>
         // Form 2 handler (CTA final)
         const form2 = document.getElementById('lead-form-2');
-        if(form2) {
+        if (form2) {
             form2.addEventListener('submit', (e) => {
                 e.preventDefault();
                 playSound();
@@ -534,9 +718,23 @@
                 btn.style.opacity = '0.8';
                 setTimeout(() => {
                     window.location.href = form2.getAttribute('action');
-                }, 600); 
+                }, 600);
             });
         }
+
+        // FAQ: solo un acordeón abierto a la vez
+        const faqItems = document.querySelectorAll('.faq-accordion .faq-item');
+        faqItems.forEach((item) => {
+            item.addEventListener('toggle', () => {
+                if (item.open) {
+                    faqItems.forEach((other) => {
+                        if (other !== item) {
+                            other.open = false;
+                        }
+                    });
+                }
+            });
+        });
     </script>
 </body>
 </html>
