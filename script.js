@@ -237,14 +237,23 @@ function initModals() {
         });
     });
 
-    // Cookie Banner
+    // Cookie Banner: consentimiento con único botón "Entendido"
     const cookieBanner = document.getElementById('cookieBanner');
-    if(cookieBanner) {
-        document.getElementById('acceptCookies')?.addEventListener('click', () => {
-            localStorage.setItem('cookies_accepted', 'true');
-            cookieBanner.classList.remove('show');
-        });
-        // Sin popup al aterrizar: no se muestra el banner automáticamente
+    if (cookieBanner) {
+        const alreadyAccepted = localStorage.getItem('cookies_accepted') === 'true';
+
+        // Si aún no ha aceptado, mostramos el banner
+        if (!alreadyAccepted) {
+            cookieBanner.classList.add('show');
+        }
+
+        const acceptBtn = document.getElementById('acceptCookies');
+        if (acceptBtn) {
+            acceptBtn.addEventListener('click', () => {
+                localStorage.setItem('cookies_accepted', 'true');
+                cookieBanner.classList.remove('show');
+            });
+        }
     }
 }
 
